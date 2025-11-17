@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六个面的骰子</title>
+    <style>
+        .background{
+            width: 2000px;
+            height: 2000px;
+            display: flex;
+            background-color: black;
+        }
+        .tz1{
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+        }
+        .tz2{
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+        }
+        .tz3{
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+        }
+        .tz4{
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .tz5{
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .tz6{
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .ds1{
+            width: 25px;
+            height: 25px;
+            margin-top: 62.5px;
+            margin-left: 62.5px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds2{
+            width: 25px;
+            height: 25px;
+            margin-top: 62.5px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds3{
+            width: 25px;
+            height: 25px;
+            margin-top: 62.5px;
+            margin-left: 60px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds4{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds5{
+            width: 25px;
+            height: 25px;
+            margin-top: 60px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds6{
+            width: 25px;
+            height: 25px;
+            margin-top: 105px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds7{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds8{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 36px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds9{
+            width: 25px;
+            height: 25px;
+            margin-top: 40px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds10{
+            width: 25px;
+            height: 25px;
+            margin-top: 40px;
+            margin-left: 36px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds11{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds12{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds13{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 62.5px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds14{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds15{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds16{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds17{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds18{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds19{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds20{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .ds21{
+            width: 25px;
+            height: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="tz1">
+            <div class="ds1"></div>
+        </div>
+        <div class="tz2">
+            <div class="ds2"></div>
+            <div class="ds3"></div>
+        </div>
+        <div class="tz3">
+            <div class="ds4"></div>
+            <div class="ds5"></div>
+            <div class="ds6"></div>
+        </div>
+        <div class="tz4">
+            <div class="ds7"></div>
+            <div class="ds8"></div>
+            <div class="ds9"></div>
+            <div class="ds10"></div>
+        </div>
+        <div class="tz5">
+            <div class="ds11"></div>
+            <div class="ds12"></div>
+            <div class="ds13"></div>
+            <div class="ds14"></div>
+            <div class="ds15"></div>
+        </div>
+        <div class="tz6">
+            <div class="ds16"></div>
+            <div class="ds17"></div>
+            <div class="ds18"></div>
+            <div class="ds19"></div>
+            <div class="ds20"></div>
+            <div class="ds21"></div>
+        </div>
+    </div>
+</body>
+</html>
